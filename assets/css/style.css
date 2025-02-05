@@ -1,0 +1,518 @@
+* {
+  box-sizing: border-box;
+}
+
+*,
+a,
+footer {
+  font-family: easyJet Rounded Book, sans-serif;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* HEADER - STYLE*/
+header {
+  background-image: url("/assets/imgs/headbar.gif");
+  background-size: cover;
+  height: 60px;
+  font-size: 16px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header button {
+  padding: 7px 10px;
+  color: #ff6600;
+  background-color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 2px;
+}
+
+.signup-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* MAIN - STYLE */
+
+/* BEACH SECTION */
+
+.beach-section {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.beach-section img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+}
+
+.beach-absolute {
+  position: absolute;
+  top: 20px;
+  height: 430px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.bookingmenu-container {
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-column {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.left-column-title {
+  font-size: 50px;
+  font-family: easyJet Headline, sans-serif;
+}
+
+.left-column > div p:nth-child(2) {
+  font-size: 30px;
+}
+
+.left-column button {
+  padding: 10px 30px;
+  background-color: #f60;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 2px;
+  align-self: flex-start;
+}
+
+/* beach white part */
+
+.beach-white-absolute {
+  position: absolute;
+  bottom: 0px;
+  height: 130px;
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.7);
+}
+
+.container-white-bar {
+  height: 100%;
+}
+
+.offers {
+  margin-top: 7px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.offers button {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  background-color: #f70;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-size: 13px;
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+  align-items: flex-start;
+}
+
+.offers p {
+  font-size: 18px;
+}
+
+.offers > div > p {
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.wrapper.container-white-bar > p:nth-of-type(1) {
+  font-size: 11px;
+}
+
+/* MONDE BRETAGNE */
+
+.monde-bretagne {
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px #bbb;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.monde-bretagne > div {
+  padding: 10px;
+}
+
+.monde-bretagne p {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.monde-bretagne button {
+  background-color: #f70;
+  border: none;
+  padding: 8px 30px;
+  color: white;
+  border-radius: 2px;
+  align-self: flex-end;
+}
+
+.monde-bretagne > img {
+  width: 640px;
+}
+
+.monde-bretagne > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* MONDE */
+
+.monde img {
+  height: 250px;
+  width: 640px;
+  object-fit: cover;
+  object-position: right top;
+  display: block;
+}
+
+/* BRETAGNE */
+
+.bretagne img {
+  height: 305px;
+  width: 640px;
+  object-fit: cover;
+  object-position: right top;
+  display: block;
+}
+
+/* CARROUSSEL*/
+
+.carroussel-1::-webkit-scrollbar {
+  display: none;
+}
+
+.carroussel-1 {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carroussel-1 {
+  height: 380px;
+  margin-bottom: 20px;
+  display: flex;
+  overflow: scroll;
+  gap: 20px;
+}
+
+.carrousel-card {
+  height: 370px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 0 5px #bbb;
+}
+
+.carrousel-card img {
+  height: 140px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carrousel-card > div {
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.carrousel-card button {
+  position: absolute;
+  bottom: 15px;
+  background-color: #f60;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 8px 30px;
+  border: none;
+}
+
+/* TRIPLE IMG*/
+
+.triple-img {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.triple-img > div {
+  position: relative;
+}
+
+.triple-img-absolute {
+  position: absolute;
+  top: 0px;
+  height: 220px;
+  width: 285px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.triple-img-absolute h4 {
+  font-size: 30px;
+}
+
+.triple-img-absolute p {
+  font-size: 20px;
+}
+
+.triple-img img {
+  display: block;
+  height: 220px;
+  width: 285px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #bbb;
+}
+
+/* BOTTOM CARROUSEL*/
+
+.bottom-carrousel {
+  /*border: 1px solid blue;*/
+  margin-bottom: 50px;
+}
+
+.bottom-carrousel h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.bottom-carrousel > menu {
+  /*border: 1px solid green;*/
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden; /* Empêche l'affichage vertical */
+  gap: 18px;
+  scrollbar-width: none; /* Cache la scrollbar sur Firefox */
+}
+
+.bottom-carrousel > menu::-webkit-scrollbar {
+  display: none; /* Cache la scrollbar sur Chrome, Safari, Edge */
+}
+
+.bottom-carrousel div {
+  height: 145px;
+  width: 145px;
+  padding: 20px;
+  /*border: 1px solid red;*/
+  border-radius: 10px;
+  background-color: #333;
+  color: white;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bottom-carrousel div:hover {
+  background-color: #f70;
+  cursor: pointer;
+}
+
+.icon {
+  color: white;
+  font-size: 50px;
+  align-self: center;
+}
+
+/* FOOTER*/
+
+footer {
+  background-color: #f2f2f2;
+}
+
+footer > div {
+  padding: 20px;
+}
+
+.footer-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-div p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.footer-div li {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* hide by */
+.phone-display {
+  display: none;
+}
+
+.white-icon {
+  color: white;
+}
+
+/* point de rupture : 1115px 960px 670px */
+
+@media (max-width: 1115px) {
+  .hidden-1115 {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  /*Monde-Bretagne*/
+  .monde-bretagne {
+    flex-direction: column;
+    width: 630px;
+  }
+
+  /*triple imgs */
+
+  .triple-img {
+    width: 630px;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .triple-img > div:nth-child(3) {
+    width: 100%;
+  }
+
+  .triple-img > div:nth-child(3) img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .padding-960 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 670px) {
+  .hidden-670 {
+    display: none;
+  }
+
+  .phone-display {
+    display: inline;
+  }
+
+  /* beach section */
+
+  .bookingmenu-container {
+    justify-content: center;
+  }
+
+  .visibility-hidden {
+    visibility: hidden;
+  }
+
+  .beach-section {
+    background-color: #f2f2f2;
+  }
+
+  .beach-white-absolute {
+    background-color: white;
+  }
+
+  /* Monde Bretagne */
+
+  .monde-bretagne {
+    width: 300px;
+  }
+
+  /* triple img */
+
+  .triple-img {
+    width: auto;
+    gap: 40px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding: 20px;
+    overflow-x: auto;
+    overflow-y: hidden; /* Empêche l'affichage vertical */
+    scrollbar-width: none; /* Cache la scrollbar sur Firefox */
+  }
+
+  .triple-img > menu::-webkit-scrollbar {
+    display: none; /* Cache la scrollbar sur Chrome, Safari, Edge */
+  }
+
+  .triple-img > div:nth-child(3) {
+    width: auto;
+  }
+
+  .triple-img > div:nth-child(3) img {
+    width: 285px;
+  }
+
+  /* footer */
+
+  .footer-div {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+}
